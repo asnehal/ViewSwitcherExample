@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        
+        <Button android:id="@+id/Previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prev"/>
+        
+        <Button android:id="@+id/Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next"/>
+        
+    </LinearLayout>
+    
+    <ViewSwitcher android:id="@+id/viewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttons">
+        
+        <TextView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="First View"
+            android:textSize="20dp"
+            android:gravity="center"/>
+        
+        <TextView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Second View"
+            android:textSize="20dp"
+            android:gravity="center"/>
+        
+    </ViewSwitcher>
+    
+</RelativeLayout>
